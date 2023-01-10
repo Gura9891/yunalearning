@@ -1,0 +1,56 @@
+@use "scss" as *;
+
+.profile__edit {
+  &__modal {
+    .ant-modal-title {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .ant-modal-mask {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+.profile__edit__form {
+  .footer-btn {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-primary {
+    width: 150px;
+    border-radius: 15px;
+    background: purple;
+  }
+
+  .password-form {
+    position: relative;
+  }
+
+  .password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  // text of switch
+  .ant-form-item-explain,
+  .ant-form-item-extra {
+    color: #00c853;
+  }
+
+  .ant-switch-checked {
+    background: #800080;
+  }
+}

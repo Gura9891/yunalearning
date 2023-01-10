@@ -1,0 +1,45 @@
+@use "scss" as *;
+
+body.react-confirm-alert-body-element {
+  width: calc(100% - 17px);
+}
+
+.react-confirm-alert-body {
+  text-align: center;
+  background: $header-bg;
+  color: white;
+  max-width: 400px;
+}
+
+.react-confirm-alert-button-group {
+  justify-content: center;
+}
+
+.react-confirm-alert-button-group > button {
+  width: 120px;
+  padding: 10px 32px;
+  color: white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:first-child {
+    background: #00c853;
+  }
+
+  &:nth-child(2) {
+    background: red;
+  }
+}
+
+.react-confirm-alert-body > h1 {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+}
+
+.react-confirm-alert-overlay {
+  background: rgba($color: #000000, $alpha: 0.8);
+  z-index: 1001;
+}

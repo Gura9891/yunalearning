@@ -1,0 +1,62 @@
+@use "scss" as *;
+
+.cart__wrapper {
+  .ant-drawer-title {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .image {
+    $size: 60px;
+    width: $size;
+    height: $size;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .cart-table {
+    height: calc(100vh - 200px);
+    overflow: auto;
+  }
+
+  .nothing-cart {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .footer-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+  }
+
+  .delete-btn {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .register-btn {
+    padding: 12px 50px;
+    border-radius: 8px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

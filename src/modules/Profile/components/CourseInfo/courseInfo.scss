@@ -1,0 +1,59 @@
+@use "scss" as *;
+
+.course__info {
+  max-height: 320px;
+  overflow: auto;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .col {
+      padding: 10px;
+    }
+
+    .item {
+      padding: 10px 10px 28px 10px;
+      border-radius: 15px;
+      background: rgba($color: #ccc, $alpha: 0.3);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+
+      .image {
+        $size: 70px;
+        width: $size;
+        height: $size;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+
+      .main {
+        margin-left: 16px;
+
+        .name {
+          font-weight: 600;
+        }
+      }
+      .register-cancel-btn {
+        color: $txt-color;
+        padding: 3px 5px;
+        border-radius: 5px;
+        background: $main-color;
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

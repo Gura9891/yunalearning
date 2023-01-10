@@ -1,0 +1,88 @@
+@use "scss" as *;
+
+.overlayContent {
+  width: 400px;
+  font-weight: 600;
+  background-color: $header-bg;
+  color: $txt-color;
+  border-radius: 10px;
+
+  .wrapper {
+    padding: 20px;
+    .avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px;
+      border-radius: 10px;
+
+      .avatar-icon {
+        $size: 40px;
+        width: $size;
+        height: $size;
+        border-radius: $size;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .name {
+        font-weight: 600;
+        margin-left: 8px;
+      }
+    }
+
+    .line {
+      border: 0.5px solid rgba($color: #fff, $alpha: 0.4);
+      margin: 10px 10px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      color: #03a9f4;
+      margin-bottom: 10px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+
+    .main {
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba($color: #333, $alpha: 0.8);
+        }
+      }
+
+      .icon {
+        $size: 30px;
+        width: $size;
+        height: $size;
+        border-radius: $size;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(#ccc, 0.7);
+      }
+
+      .content {
+        margin-left: 10px;
+      }
+    }
+  }
+}

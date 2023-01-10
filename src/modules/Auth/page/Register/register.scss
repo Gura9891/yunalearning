@@ -1,0 +1,60 @@
+@use "scss" as *;
+
+.register {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .main {
+      margin-top: 20px;
+      width: 90%;
+
+      .ant-form-item {
+        margin-bottom: 10px;
+      }
+
+      .ant-form-item-label {
+        padding-bottom: 0;
+      }
+
+      .black {
+        color: $main-color;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .login-form {
+        width: 100%;
+      }
+
+      .login-form-button {
+        width: 100%;
+      }
+
+      .submit-btn {
+        background-color: #ce93d8;
+        position: relative;
+
+        &:hover {
+          opacity: 0.7;
+        }
+        .spiner__icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

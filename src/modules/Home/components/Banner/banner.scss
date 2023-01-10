@@ -1,0 +1,59 @@
+@use "scss" as *;
+
+.banner {
+  position: relative;
+  height: 100vh;
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      background: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .title {
+      color: $txt-color;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .content {
+      color: $txt-color;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+
+    .button {
+      margin-top: 16px;
+      & > * ~ * {
+        margin-left: 10px;
+      }
+    }
+  }
+}

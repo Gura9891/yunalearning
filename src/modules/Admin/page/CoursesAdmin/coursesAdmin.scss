@@ -1,0 +1,69 @@
+@use "scss" as *;
+
+.admin__courses {
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .course__tool {
+      display: flex;
+      align-items: center;
+
+      .search {
+        width: 220px;
+        border-radius: 12px;
+        box-shadow: $admin-box-shadow;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .search-input {
+          width: 100%;
+          padding: 5px 32px 5px 15px;
+        }
+
+        .search-icon {
+          width: 30px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+
+          &:hover {
+            cursor: pointer;
+            color: $main-color;
+          }
+        }
+      }
+
+      .addCourse__btn {
+        padding: 7px 12px;
+        background: $main-color;
+        border-radius: 8px;
+        color: $txt-color;
+        margin-left: 24px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .wrapper {
+    margin-top: 32px;
+    padding: 15px;
+    box-shadow: $admin-box-shadow;
+    border-radius: 15px;
+  }
+}

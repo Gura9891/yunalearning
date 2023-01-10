@@ -1,0 +1,62 @@
+@use "scss" as *;
+.sidebar__wrapper {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+      $size: 40px;
+      width: $size;
+      height: $size;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: $main-color;
+      margin-left: 8px;
+    }
+  }
+
+  .sidebar__nav {
+    margin-top: 32px;
+
+    .item {
+      color: #333;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 1px;
+
+      &.active {
+        color: $txt-color;
+        background: $main-color;
+      }
+
+      &:hover {
+        color: $txt-color;
+        background: $main-color;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+      }
+
+      .title {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

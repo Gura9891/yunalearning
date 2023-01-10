@@ -1,0 +1,129 @@
+@use "scss" as *;
+
+.swiper__wrapper {
+  width: 80%;
+  height: 450px;
+  margin: auto;
+  // background-color: pink;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  //   background: transparent !important;
+  text-align: center;
+  font-size: 16px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Slide css
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+// bullet css
+.swiper-pagination-bullet {
+  $size: 10px;
+  width: $size;
+  height: $size;
+  box-shadow: 1px 1px 1px#fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba($color: yellow, $alpha: 1);
+}
+
+// button next and prev
+
+.swiper-button-next,
+.swiper-button-prev {
+  // swiper trong ô tròn
+  //   width: 30px;
+  //   height: 30px;
+  //   border-radius: 50%;
+  //   background-color: aqua;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 700;
+  color: yellow;
+}
+
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  .avatar {
+    $size: 120px;
+    width: $size;
+    height: $size;
+    border-radius: 999px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(56, 45, 139);
+  }
+
+  .location {
+    font-weight: 400;
+  }
+
+  .response {
+    font-size: 1.2rem;
+    font-weight: 450;
+  }
+
+  .vertical {
+    width: 50%;
+    border: 1px solid $main-color;
+    margin: 10px 0;
+  }
+}
